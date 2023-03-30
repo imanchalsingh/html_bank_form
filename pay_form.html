@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <style>
+        header{
+            height: 3%;
+            width: 25%;
+            border: black;
+            background-color: tomato;
+            border-style: double;
+            text-align: center;
+            margin: auto;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        main{
+            text-align: center;
+            margin: auto;
+            border: black;
+            border-style: double;
+            height: 40%;
+            width: 25%;
+            background-color: white;
+            color: blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        footer{
+           text-align: center;
+            margin: auto;
+            border: black;
+            border-style: double;
+            height: 5%;
+            width: 25%;
+            background-color: rgb(9, 199, 9);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header:hover{
+            background-color: red;
+        }
+        footer:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <form action="">
+            <h1>Payment Form</h1>
+            <h3>Fill form properly</h3>
+        </header>
+        <main>
+            <h2>Personal Information</h2>
+        <div>
+            <p>Name: <input type="text" name="name" id="name" required/></p>
+        </div>
+        <div>
+            <p>Mobile no.: <input type="number" name="number" id="number" required/></p>
+        </div>
+        <div>
+            <p>
+                Gender: <input type="radio" value= "Male" name="Gender" id="male" required/>Male
+                <input type="radio" value="Female" name="Gender" id="female"/>Female
+                <input type="radio" value="Other" name="Gender" id="other"/>other
+            </p>
+        </div>
+        <div>
+            <p>Mail: <input type="email" name="mail" id="mail" required></p>
+        </div>
+        <div>
+            <p>Address: <textarea name="Address" id="Address" cols="20" rows="1"required></textarea></p>
+        </div>
+        <h2>Account details</h2>
+        <div>
+            <p>Branch name: <input type="text" name="Branch" id="Branch" required></p>
+        </div>
+        <div>
+            <p>City name: <input type="text" name="city" id="city" required></p>
+        </div>
+        <div>
+            <p>Account number: <input type="number" name="Account" id="Account" required></p>
+        </div>
+        <div>
+            <P>IFSC code: <input type="password" name="IFSC" id="IFSC" required></P>
+        </div>
+        <div>
+            <p>Date: <input type="date" name="date" id="date" required></p>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </footer>
+
+    </form>
+</body>
+
+</html>
